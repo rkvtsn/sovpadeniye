@@ -15,7 +15,7 @@
   background-color: var(--color-blitz2);
   position: absolute;
   top: 0;
-  transition: width 4s ease-in;
+  transition: width 2s ease-in-out;
 }
 
 .timeline-time {

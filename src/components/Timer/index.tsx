@@ -10,11 +10,12 @@ const Timer = ({ seconds, onDone }: TimerProps) => {
   useEffect(() => {
     timer.current = setInterval(() => {
       setCountDown((t) => {
-        if (t == seconds - 1) {
+        t += 1;
+        if (t == seconds) {
           clearInterval(timer.current);
           onDone();
         }
-        return t + 1;
+        return t;
       });
     }, 1000);
 
