@@ -3,6 +3,7 @@ import { service } from "../../services/Service";
 import { IWord } from "../../domains/IWord";
 import { IBlitz } from "../../domains/IBlitz";
 import Card from "../../components/Card";
+import Timer from "../../components/Timer";
 import "./styles.css";
 
 const Game = () => {
@@ -26,7 +27,7 @@ const Game = () => {
 
   return (
     <div className="game">
-      <div className="game-controls">
+      <div className="game__controls">
         <button
           className={card?.type == "owls" ? "btn--active" : ""}
           onClick={handleOnOwl}
@@ -45,9 +46,18 @@ const Game = () => {
         >
           Блиц
         </button>
-        <button onClick={handleClear}>Закрыть</button>
+        <button onClick={handleClear}>Скрыть</button>
       </div>
-      <Card card={card} />
+      <div className="game__card">
+        <Card card={card} />
+      </div>
+      <div className="game__timer">
+        {card ? (
+          <Timer seconds={60} onDone={handleClear} key={card.id} />
+        ) : (
+          <div>&nbsp;</div>
+        )}
+      </div>
     </div>
   );
 };

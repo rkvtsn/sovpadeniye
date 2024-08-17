@@ -1,0 +1,30 @@
+.timer .timeline {
+  display: block;
+  height: 30px;
+  width: 100%;
+  border: 3px solid var(--color-lark);
+  background-color: var(--color-owl);
+  border-radius: 3px;
+  position: relative;
+}
+
+.timer .timeline-bar {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-blitz2);
+  position: absolute;
+  top: 0;
+  transition: width 4s ease-in;
+}
+
+.timeline-time {
+  z-index: 10;
+  width: fit-content;
+  margin: auto;
+  padding: 4px;
+  color: var(--color-owl);
+  font-weight: bold;
+  position: relative;
+  background-color: var(--color-lark);
+}

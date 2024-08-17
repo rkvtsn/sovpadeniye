@@ -1,4 +1,17 @@
-.btn--active {
+.game .btn--active {
   background-color: var(--color-lark);
   color: var(--color-bg-lark);
+}
+
+.game__controls {
+  margin-bottom: 20px;
+}
+
+.game__card {
+  margin-bottom: 20px;
+}
+
+.game__timer {
+  width: 40vw;
+  margin: auto;
 }
