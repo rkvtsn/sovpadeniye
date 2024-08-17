@@ -1,0 +1,4 @@
+.btn--active {
+  background-color: var(--color-lark);
+  color: var(--color-bg-lark);
+}

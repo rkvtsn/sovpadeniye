@@ -1,0 +1,18 @@
+.card.card--blitz {
+  background-color: var(--color-bg-blitz);
+  color: #fff;
+}
+.card--blitz .card__words {
+  padding: 0 !important;
+  padding-inline-start: 0;
+}
+.card--blitz .card__words-word {
+  list-style: none;
+}
+
+.card--blitz .card__words-word:nth-child(odd) {
+  color: var(--color-blitz1);
+}
+.card--blitz .card__words-word:nth-child(even) {
+  color: var(--color-blitz2);
+}

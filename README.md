@@ -1,0 +1,1 @@
+# "Sovpadenie" demo board game

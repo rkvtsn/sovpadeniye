@@ -1,0 +1,4 @@
+.card.card--lark {
+  background-color: var(--color-bg-lark);
+  color: var(--color-lark);
+}
